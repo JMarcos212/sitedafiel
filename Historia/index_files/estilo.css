@@ -1,0 +1,12 @@
+﻿BODY {background-color: #696969;} 
+
+H1 {
+       font-family: 'Comic Sans MS';
+       font-size: 36pt;
+       color: black;
+     }
+
+H4 {font-family: 'Courier';
+margin-left: 0.5in;
+color: black;} 
+A {color: purple;}
