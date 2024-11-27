@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="funcoes.js">
     <title>Site da Fiel</title>
 <style>
      BODY {
@@ -13,25 +14,58 @@
 </head>
 <body>
 
-
     <header>
     <h2>SITE DA FIEL <!--(NOME DO SITE, ASSUNTO ABORDADO, OUTROS) --> </h2>
     </header>
+
+    <script>
+
+        nome = prompt ("Qual o seu nome?", "");
+        
+        
+        idade = prompt("Qual a sua idade?", "");
+        anos = eval(idade*365);
+        horas = eval(anos*24)  
+        alert("Você já foi fiel por = " + anos + " dias ou " + horas + " horas");
+
+        alert ("Seja bem-vindo ao nosso site");
+
+        window.onbeforeunload = function(e)
+        {
+        return ("Tem a certeza que quer fechar a janela?");
+        };
+
+    </script>
     
     <div class="logos"><img src="logos2p0.jpg" width="650px" alt="Logos do Corinthians"> </div>
 
     <nav>
-
-    <a href="index.html">NOTÍCIAS</a><!--LINK-1-->
-    <a href="Jogos/index.html">JOGOS</a><!-- LINK-2 -->
-    <a href="Historia/index.html">HISTÓRIA</a><!-- LINK-3 -->
-    <a href="Titulos/index.html">TÍTULOS</a><!--LINK-4 -->
-    
+                <ul>
+                    <li><a href="index.html" class="menu-button">NOTÍCIAS</a></li>
+                    <li><a href="Jogos/index.html" class="menu-button">JOGOS</a></li>
+                    <li><a href="Historia/index.html" class="menu-button">HISTÓRIA</a></li>
+                    <li><a href="Titulos/index.html" class="menu-button">TÍTULOS</a></li>
+                </ul>
     </nav>
 
     <section>
-    <h2 style="margin-top: 3%;">FIQUE POR DENTRO DAS NOTÍCIAS DO TIMÃO!</h2>
+    <p></p>
+
+    <script>
+        document.write ("<h2> Seja bem-vindo " , nome , ", <h2>")
+    </script>
+
+    <h2 style="margin-top: 0%;">FIQUE POR DENTRO DAS NOTÍCIAS DO TIMÃO!</h2>
     <!-- INSERIR AQUI O CONTEÚDO DO SITE -->
+
+    <main><a href="Gabigol/index.html"><h2>PRESIDENTE REVELA SE DESEJA CONTAR COM<br>
+    GABIGOL NO CORINTHIANS PARA 2025; VEJA</h2>
+    <img src="gabi2.jpg" height="399px" width="650px" alt="gabigol não vem">
+    </a></main>
+
+    <main><a href="Yuri/index.html"><h2>AUGUSTO MELO FALA SOBRE FUTURO DE YURI ALBERTO NO CORINTHIANS; SAIBA MAIS</h2>
+    <img src="yafica2025.jpg" height="386px" width="617px" alt="Yuri Alberto vive boa fase no timão">
+    </a></main>
 
     <main><a href="Vaidebet/index.html"><h2>CORINTHIANS NOTIFICA VAIDEBET POR TRÊS TÓPICOS<br>
     ENVOLVENDO A RESCISÃO DO CONTRATO; SAIBA TUDO</h2>

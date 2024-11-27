@@ -20,13 +20,38 @@ header {
 
 nav {
         background-color:#eeeeee;
-        height:20px;
+        height:27px;
         width:100%;
-        padding:5px;
+        padding:20px;
         text-align: center;
-	   word-spacing: 5.2em;
-        
     }
+  
+  nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      margin-left: 31%;
+  }
+  
+  nav ul li {
+      margin: 0 20px;
+  }
+  
+  .menu-button {
+      color: #7e7e7e;
+      text-decoration: none;
+      padding: 5px 15px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      display: inline-block;
+  }
+  
+  .menu-button:hover {
+      background-color: #232323;
+      transform: scale(1.1);
+  }
+  
 
 section {
             height:10%;
@@ -73,4 +98,5 @@ footer {
             padding:5px;
             	
        }
-       
+     
+ 
